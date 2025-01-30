@@ -1,7 +1,15 @@
 name: face_verify
-description: "A Flutter package for face detection and recognition."
+description: "A Flutter package for face detection and recognition using Google ML Kit and TensorFlow Lite, designed for offline capability and customizable overlays."
 version: 0.0.1
 repository: "https://github.com/Badieh/face_verify"
+topics:
+  - face-detection
+  - face-recognition
+  - facial-recognition
+  - face-verification
+  - compare-faces
+  - face-net
+  - offline
 
 environment:
   sdk: ^3.6.1

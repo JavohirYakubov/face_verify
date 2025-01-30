@@ -1,6 +1,6 @@
 A Flutter package for face detection and recognition using Google ML Kit and TensorFlow Lite.
 
-<div align="center"> <img src="doc/cover.jpg" alt="user image example" width="500" height="400" /> </div>
+<div align="center"> <img src="https://github.com/Badieh/face_verify/blob/4dc856eb22fea412d6665764e2706893224f47a6/doc/cover.jpg?raw=true" alt="cover" width="500" height="400" /> </div>
 
 ## Features
 
@@ -55,7 +55,7 @@ Future<void> main() async {
 
 The images provided to register users must be a close-up photo with a white background, similar to a passport or ID image, and should be of high quality. This can significantly affect the model's efficiency and accuracy.
 
-<div align="center"> <img src="doc/user_example.png" alt="user image example" width="300" /> </div>
+<div align="center"> <img src="https://github.com/Badieh/face_verify/blob/4dc856eb22fea412d6665764e2706893224f47a6/doc/user_example.png?raw=true" alt="user image example" width="300" /> </div>
 
 ### Perform Face Recognition
 
