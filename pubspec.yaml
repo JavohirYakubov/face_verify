@@ -5,10 +5,8 @@ repository: "https://github.com/Badieh/face_verify"
 topics:
   - face-detection
   - face-recognition
-  - facial-recognition
   - face-verification
   - compare-faces
-  - face-net
   - offline
 
 environment:
