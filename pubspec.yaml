@@ -1,6 +1,7 @@
 name: face_verify
 description: "A Flutter package for face detection and recognition."
 version: 0.0.1
+repository: "https://github.com/Badieh/face_verify"
 
 environment:
   sdk: ^3.6.1
