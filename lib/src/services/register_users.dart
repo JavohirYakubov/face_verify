@@ -19,7 +19,7 @@ import 'package:image/image.dart' as img;
 ///   - cameraDescription: The description of the camera used for face detection.
 /// - Returns: A list of UserModel objects representing the registered users.
 Future<List<UserModel>> registerUsers(
-    {required List<RegisterUserInputModel> faceRecognitionInputs,
+    {required List<RegisterUserInputModel> registerUserInputs,
     required CameraDescription cameraDescription}) async {
   FaceDetectorService faceDetectorService = FaceDetectorService(
     cameraDescription: cameraDescription,
@@ -28,21 +28,21 @@ Future<List<UserModel>> registerUsers(
   RecognitionModel recognitionModel = RecognitionModel();
 
   List<UserModel> users = [];
-  for (var i = 0; i < faceRecognitionInputs.length; i++) {
+  for (var i = 0; i < registerUserInputs.length; i++) {
     // face detection
     List<Face> faces = await faceDetectorService.doFaceDetection(
       faceDetectorSource: FaceDetectorSource.localImage,
-      localImage: File(faceRecognitionInputs[i].imagePath),
+      localImage: File(registerUserInputs[i].imagePath),
     );
 
     UserModel user = UserModel(
       id: i,
-      name: faceRecognitionInputs[i].name,
-      image: faceRecognitionInputs[i].imagePath,
+      name: registerUserInputs[i].name,
+      image: registerUserInputs[i].imagePath,
       face: faces[0],
       embeddings: recognitionModel.getEmbeddings(
           image: img.decodeImage(
-              await File(faceRecognitionInputs[i].imagePath).readAsBytes())!),
+              await File(registerUserInputs[i].imagePath).readAsBytes())!),
       distance: double.infinity,
       location: faces[0].boundingBox,
     );

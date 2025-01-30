@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ).toList();
 
                   users = await registerUsers(
-                    faceRecognitionInputs: selectedImages,
+                    registerUserInputs: selectedImages,
                     cameraDescription: cameras[1],
                   );
                   setState(() {});
