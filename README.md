@@ -43,9 +43,9 @@ Future<void> main() async {
 
 ```dart
   final List<UserModel> users = await registerUsers(
-    faceRecognitionInputs: [
-      FaceRecognitionInputModel(name: 'User1', imagePath: 'path/to/image1.jpg'),
-      FaceRecognitionInputModel(name: 'User2', imagePath: 'path/to/image2.jpg'),
+    registerUserInputs: [
+      RegisterUserInputModel(name: 'User1', imagePath: 'path/to/image1.jpg'),
+      RegisterUserInputModel(name: 'User2', imagePath: 'path/to/image2.jpg'),
     ],
     cameraDescription: cameraDescription,
   );
